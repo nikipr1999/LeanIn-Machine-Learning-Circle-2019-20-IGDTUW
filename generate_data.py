@@ -46,7 +46,13 @@ while True and num:
 	key = cv2.waitKey(1)
 	if key & 0xFF == ord('q'):
 		break
-
+	'''k = cv2.waitKey(0)
+	if k == 27:         # wait for ESC key to exit
+	    cv2.destroyAllWindows()
+	elif k == ord('s'): # wait for 's' key to save and exit
+	    #cv2.imwrite('messigray.png',img)
+	    cv2.destroyAllWindows()
+'''
 print(len(face_data))
 face_data = np.array(face_data)
 face_data = face_data.reshape((face_data.shape[0], -1))

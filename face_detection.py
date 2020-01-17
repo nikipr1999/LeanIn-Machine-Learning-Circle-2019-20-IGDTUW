@@ -1,7 +1,7 @@
 import cv2
 
-im = cv2.imread('iu.jpeg', cv2.IMREAD_COLOR)
-print(im.shape)
+im = cv2.imread('niki.jpeg', cv2.IMREAD_COLOR)
+#print(im.shape())
 
 cap = cv2.VideoCapture(0)
 
